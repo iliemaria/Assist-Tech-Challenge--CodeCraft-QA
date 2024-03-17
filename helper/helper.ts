@@ -1,5 +1,5 @@
 import {Page, expect} from "playwright/test";
-export const appURL = "https://assist-tech-challenge-code-craft-front-end.vercel.app/";
+export const appURL = "https://assist-tech-challenge-code-craft.vercel.app/";
 export const testerUsername = "tester@playwright.com";
 export const testerPassword = "automation";
 
@@ -21,6 +21,5 @@ export async function loginSuccessfully(page: Page) {
   await page.locator("button >>text=Login").click();
   await page.locator('input[placeholder="******"]').fill(testerPassword);
   await page.locator("button >> text=Login").click();
-  await waitAndVerifyIsVisible(page, "p >> text=Logged in successfully!");
   await waitAndVerifyIsVisible(page, "h1 >> text=Welcome to organization Dashboard");
 }

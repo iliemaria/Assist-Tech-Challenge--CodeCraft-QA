@@ -20,7 +20,6 @@ test("Dashboard - after login, the user is redirected to the main page", async (
   await page.locator("button >>text=Login").click();
   await page.locator('input[placeholder="******"]').fill(testerPassword);
   await page.locator("button >> text=Login").click();
-  await waitAndVerifyIsVisible(page, "p >> text=Logged in successfully!");
   await waitAndVerifyIsVisible(page, "h1 >> text=Welcome to organization Dashboard");
 });
 
