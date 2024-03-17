@@ -18,9 +18,11 @@ Playwright is a Node library for automating browsers. It allows you to write end
 
 1. Clone the repository
 2. Installation
-   npm install
+
+- npm install
 
 ## Running Tests
 
 1. Running the tests
-   npx playwright test
+
+- npx playwright test
